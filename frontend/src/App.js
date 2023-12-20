@@ -12,6 +12,7 @@ import { loadUser } from "./redux/userSlice.js";
 import UserOptions from "./Component/layout/UserOptions.jsx";
 import Profile from "./Component/user/Profile.jsx";
 import Cart from "./Component/cart/Cart.jsx";
+
 import ShippingInfo from "./Component/payment/ShippingInfo.jsx";
 import ConfirmOrder from "./Component/payment/ConfirmOrder.jsx";
 import Success from "./Component/payment/Success.jsx";

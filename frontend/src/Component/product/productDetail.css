@@ -175,7 +175,7 @@
   }
   .productDetail :first-child {
     margin: auto;
-    height: 100%;
+    height: unset;
   }
   .detailBlog {
     justify-content: center;
