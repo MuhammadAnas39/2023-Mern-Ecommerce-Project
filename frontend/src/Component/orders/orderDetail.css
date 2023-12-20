@@ -1,0 +1,125 @@
+.orderDetailPage {
+  max-width: 95%;
+  min-height: 50vh;
+  padding: 5rem 0;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  color: rgb(87, 87, 87);
+  margin: auto;
+}
+.orderDetailPage p {
+  color: rgb(91, 91, 91);
+  margin: 4px 0;
+}
+.orderDetailPage span {
+  color: rgb(141, 141, 141);
+  margin: 4px 0;
+}
+
+.orderDetailPage h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.orderDetailFirstChild h3 {
+  color: coral;
+}
+.orderDetailFirstChild h6 {
+  color: rgb(195, 195, 195);
+}
+/* .orderDetailSecondChild p,
+span,
+a {
+  font-size: 14px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+
+  margin: 4px 0;
+} */
+
+.shippingDIV > h4 {
+  margin: 20px 0;
+  border-bottom: 2px solid rgb(235, 235, 235);
+  width: fit-content;
+  padding: 5px 0;
+}
+.shippingDIV > div {
+  margin: 25px;
+}
+.shippingDIV > div > div {
+  display: flex;
+  gap: 8px;
+}
+
+.paymentDIV > h4 {
+  margin: 20px 0;
+  border-bottom: 2px solid rgb(235, 235, 235);
+  width: fit-content;
+  padding: 5px 0;
+}
+.paymentDIV > div {
+  margin: 25px;
+}
+
+.paymentDIV > div > div {
+  display: flex;
+  gap: 8px;
+}
+
+.orderStatusDIV > h4 {
+  margin: 20px 0;
+  border-bottom: 2px solid rgb(235, 235, 235);
+  width: fit-content;
+  padding: 5px 0;
+}
+.orderStatusDIV > p {
+  margin: 25px;
+}
+
+.orderDetailSecondChild {
+  padding: 60px 0;
+}
+
+.orderDetailSecondChild > h4 {
+  margin: auto;
+  border-bottom: 2px solid rgb(235, 235, 235);
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px 0;
+}
+
+.orderDetailItemsCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.orderDetailItemsCard > a {
+  width: 40%;
+  color: rgb(141, 141, 141);
+  font-size: 12px;
+}
+.orderDetailItemsCard > p {
+  font-size: 11px;
+}
+.orderDetailItemsCard > img {
+  width: 40px;
+}
+
+@media (max-width: 768px) {
+  .orderDetailPage {
+    grid-template-columns: 1fr;
+  }
+  .orderDetailSecondChild {
+    padding: 0;
+  }
+  .orderDetailSecondChild > h4 {
+    margin: 20px 0;
+    border-bottom: 2px solid rgb(235, 235, 235);
+    width: fit-content;
+    padding: 5px 0;
+  }
+}

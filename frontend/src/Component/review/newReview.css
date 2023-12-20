@@ -1,0 +1,45 @@
+.reviewModalHeading {
+  padding: 5px 0;
+  width: 40%;
+  border-bottom: 2px solid #f2f2f2;
+  margin: auto;
+  text-align: center;
+  color: gray;
+}
+
+.reviewModal-form > textarea {
+  width: 100%;
+  min-height: 100px;
+  outline: none;
+  border: 2px solid #efefef;
+  padding: 5px;
+  color: gray;
+}
+
+.reviewModal-form > div {
+  text-align: right;
+}
+.reviewModal-form > div > button {
+  padding: 10px;
+  border: none;
+  outline: none;
+  color: white;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.reviewModal-form > div > button:first-child {
+  background-color: #d56363;
+  width: 30%;
+  margin-right: 10px;
+}
+.reviewModal-form > div > button:first-child:hover {
+  background-color: #d84848;
+}
+.reviewModal-form > div > button:last-child {
+  background-color: #4d904d;
+  width: 40%;
+}
+.reviewModal-form > div > button:last-child:hover {
+  background-color: #49ab49;
+}

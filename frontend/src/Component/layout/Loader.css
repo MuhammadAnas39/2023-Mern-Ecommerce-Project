@@ -1,0 +1,20 @@
+.loader {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.loader > div {
+  width: 8rem;
+  height: 8rem;
+  border-bottom: 5px solid coral;
+  border-radius: 100%;
+  animation: loadRotate 800ms linear infinite;
+}
+@keyframes loadRotate {
+  to {
+    transform: rotateZ(360deg);
+  }
+}

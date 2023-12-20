@@ -1,0 +1,21 @@
+.line {
+  margin-top: 13px;
+  height: 2px;
+  width: 78%;
+}
+
+.orderSliderContainer {
+  display: flex;
+  margin: 5.5rem auto 2rem auto;
+  align-items: center;
+  width: 80%;
+}
+
+@media (max-width: 768px) {
+  .line {
+    width: 42%;
+  }
+  .orderSliderContainer {
+    width: 95%;
+  }
+}

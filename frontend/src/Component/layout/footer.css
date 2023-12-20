@@ -1,0 +1,60 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding: 2vmax;
+  background-color: rgb(32, 31, 31);
+  color: white;
+  padding: 50px;
+  font-size: 18px;
+  margin-top: 8rem;
+}
+.mid {
+  width: 45%;
+  text-align: center;
+}
+.mid h4 {
+  font-size: 4vmax;
+  color: coral;
+}
+.last {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 20%;
+  text-align: center;
+}
+.last > a {
+  text-decoration: none;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-align: center;
+  justify-content: center;
+}
+.last > h4 {
+  margin-bottom: 10px;
+}
+.last a :hover {
+  color: coral;
+}
+
+@media only screen and (max-width: 767px) {
+  .footer {
+    justify-content: center;
+    padding: 20px;
+  }
+  .mid > h4 {
+    margin-bottom: 5px;
+  }
+  .mid > p {
+    color: rgb(138, 138, 138);
+  }
+  .first {
+    display: none;
+  }
+  .last {
+    display: none;
+  }
+}

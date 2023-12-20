@@ -1,0 +1,285 @@
+.productDetail {
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  gap: 20px;
+  box-sizing: border-box;
+  padding: 6vmax;
+  min-height: 88vh;
+}
+.firstChild {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.productDetail > div {
+  width: 100%;
+}
+
+.carouselImg {
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+}
+
+.detailBlog {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 100%;
+  color: #6c6c6c;
+}
+.detailBlog span {
+  color: #b4b4b4;
+  font-family: monospace;
+  font-size: 17px;
+}
+
+.blog1 > h4 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: monospace;
+}
+
+.blog2 {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border-bottom: 2px solid #d7d7d7;
+  border-top: 2px solid #d7d7d7;
+  width: 80%;
+  padding: 8px 0;
+}
+
+.blog3 > h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  border-bottom: 2px solid #d7d7d7;
+  letter-spacing: -1px;
+  margin-bottom: 10px;
+}
+
+.carouselItem {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.blog4 {
+  display: flex;
+  align-items: center;
+  width: 80%;
+}
+
+.blog4 > input {
+  text-align: center;
+}
+.blog4 .qty {
+  width: 30px;
+  height: 30px;
+  outline: none;
+  background-color: rgb(51, 51, 51);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.blog4 .qty:hover {
+  background-color: rgb(27, 27, 27);
+}
+
+.blog4 > input {
+  height: 100%;
+  width: 45px;
+  outline: none;
+  border: none;
+}
+
+.addCart {
+  /* width: 100%; */
+  background-color: coral;
+  outline: none;
+  border: none;
+  height: 100%;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+  margin-left: 10px;
+  width: 80%;
+  box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.1);
+}
+.addCart:hover {
+  background-color: rgb(255, 94, 36);
+}
+
+.blog5 {
+  width: 100%;
+}
+.blog5 .first > p {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 2px solid #d7d7d7;
+  border-top: 2px solid #d7d7d7;
+  width: 80%;
+  margin: 10px 0;
+}
+.blog5 :first-child .red {
+  color: red;
+}
+.blog5 :first-child .green {
+  color: green;
+}
+
+.second {
+  font-weight: 600;
+}
+.second > p {
+  font-weight: 100;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 14px;
+}
+
+.submitReview {
+  width: 80%;
+  height: 40px;
+  background-color: coral;
+  color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.submitReview:hover {
+  background-color: rgb(255, 94, 36);
+}
+
+.carousel {
+  width: 80%;
+  overflow: hidden;
+  margin: 20px auto;
+}
+
+@media (max-width: 768px) {
+  .productDetail {
+    flex-direction: column;
+    width: 100%;
+    padding: 7vmax 1vmax;
+  }
+  .productDetail :first-child {
+    margin: auto;
+    height: 100%;
+  }
+  .detailBlog {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .blog4 {
+    width: 95%;
+  }
+  .second {
+    text-align: left;
+    margin: 10px;
+  }
+  .submitReview {
+    width: 95%;
+  }
+  .blog1 > :first-child {
+    font-size: 1.5rem;
+  }
+  .blog1 > :last-child {
+    font-size: 13px;
+  }
+  .blog2 > :last-child {
+    font-size: 14px;
+  }
+  .blog2 {
+    margin: 15px 0;
+    width: 95%;
+  }
+  h1 {
+    font-size: 1.5rem;
+    margin: 4px 0;
+    color: coral;
+  }
+  .blog4 {
+    height: 30px;
+    margin: 10px 0;
+  }
+  .second {
+    margin: 20px 0;
+  }
+}
+
+/* --------------------------REVIEWS----------------------------------------*/
+
+.reviews {
+  width: 90%;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  gap: 50px;
+  overflow-x: auto;
+}
+
+.reviewHeading {
+  text-align: center;
+  width: 150px;
+  margin: 20px auto;
+  border-bottom: 2px solid #d7d7d7;
+  padding: 10px 0;
+  margin-bottom: 40px;
+  color: rgb(125, 125, 125);
+}
+
+.reviewCard {
+  flex: none;
+  padding: 20px;
+  width: 300px;
+  height: 300px;
+  border: 2px solid #d7d7d7;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  overflow: auto;
+}
+.reviewCard:hover {
+  box-shadow: inset 5px 5px 5px 5px 2px rgba(0, 0, 0, 0.3);
+}
+.reviewCard > p {
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+}
+
+.reviewCard > img {
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.reviewCard > span {
+  text-align: left;
+
+  font-size: 13px;
+  align-self: flex-start;
+  color: gray;
+}
+
+.noReview {
+  text-align: center;
+  color: gray;
+  font-size: 20px;
+  padding: 10px;
+}

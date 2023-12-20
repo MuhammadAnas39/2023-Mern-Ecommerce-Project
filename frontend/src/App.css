@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  /* Hide the default scrollbar */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  cursor: url("./cursor.png"), auto;
+}
+
+body::-webkit-scrollbar {
+  width: 0; /* Adjust the width as needed */
+  height: 0;
+}
+
+/* Use a default cursor for testing */
+body {
+  /* cursor: url("file:///C:/path/to/cursor.png"), auto; */
+}
+
+.redColor {
+  color: red;
+}
+
+.greenColor {
+  color: green;
+}

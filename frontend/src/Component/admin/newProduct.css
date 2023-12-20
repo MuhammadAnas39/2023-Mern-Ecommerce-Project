@@ -1,0 +1,111 @@
+.newProductContainer {
+  background: #f7f7f7;
+  border-left: 1px solid #e6e6e6;
+  padding: 3rem 0;
+  min-width: 100%;
+}
+
+.newProductContainer > h2 {
+  text-align: center;
+  margin: 10px auto;
+  width: fit-content;
+  color: rgb(107, 107, 107);
+}
+.newProduct-form {
+  background: white;
+  width: 45%;
+  margin: 10px auto;
+  padding: 15px;
+}
+.newProductInputBox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: 2px solid rgb(243, 243, 243);
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 10px;
+}
+.newProductDescriptionBox {
+  width: 100%;
+  display: flex;
+  gap: 5px;
+  border: 2px solid rgb(243, 243, 243);
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 10px;
+}
+.newProductInputBox > input {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+.newProductDescriptionBox > textarea {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+.newProductImagesBox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: 2px solid rgb(243, 243, 243);
+  border-radius: 5px;
+  margin: 10px 0;
+  position: relative;
+  justify-content: center;
+  color: gray;
+}
+.newProductHiddenFile {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.newProductPreviewBox {
+  width: 100%;
+  padding: 10px;
+  overflow-x: auto;
+  display: flex;
+  gap: 16px;
+  margin: 10px 0;
+}
+.newProductPreviewBox::-webkit-scrollbar {
+  display: none;
+}
+.newProductPreviewBox > img {
+  width: 60px;
+  height: 60px;
+}
+
+.newProductSubmit {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(100, 100, 100);
+  border-radius: 5px;
+  color: white;
+  margin-top: 10px;
+  border: none;
+  outline: none;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.newProductSubmit:hover {
+  background-color: rgb(64, 64, 64);
+}
+
+@media (max-width: 768px) {
+  .newProductContainer {
+    background-color: white;
+    border-top: 1px solid #e6e6e6;
+  }
+  .newProduct-form {
+    width: 100%;
+  }
+}

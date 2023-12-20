@@ -1,0 +1,72 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  z-index: 2;
+}
+
+.profileBox {
+  margin-left: auto;
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  width: fit-content;
+  top: 26px;
+  right: 16px;
+  z-index: 2;
+  align-items: center;
+}
+
+.profileBox > img {
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+}
+
+.profileBox > svg {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.profileBox > svg:hover {
+  color: coral;
+}
+
+.dropDownBox {
+  position: absolute;
+  top: 100%;
+  right: 0px;
+  z-index: 7;
+  background: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dropDownBox.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.dropDownBox > div {
+  padding: 4px 10px;
+  display: flex;
+  align-items: center;
+  color: #7b7b7b;
+  gap: 3px;
+  cursor: pointer;
+  transition: coral 0.3s ease;
+}
+
+.dropDownBox > div:hover {
+  background-color: rgb(201, 201, 201);
+}

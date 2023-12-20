@@ -1,0 +1,68 @@
+.paymentPageHeading {
+  color: rgb(131, 131, 131);
+  border-bottom: 2px solid rgb(230, 230, 230);
+  width: 20%;
+  margin: 0 auto 20px auto;
+  text-align: center;
+  padding: 8px 0;
+}
+.paymentPageForm {
+  width: 40%;
+  margin: 10px auto;
+}
+.paymentFormContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid gray;
+  border-radius: 4px;
+  width: 100%;
+  padding: 5px 5px;
+  margin: 20px auto;
+}
+
+.iconContainer {
+  flex: 0 0 auto; /* Do not allow this container to grow or shrink */
+  margin-right: 10px;
+}
+
+.cardNumberContainer {
+  flex: 1;
+  width: 100%; /* Ensure the input takes the available width */
+}
+
+.paymentPageForm > button {
+  border: none;
+  width: 100%;
+  margin: auto;
+  background-color: coral;
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.paymentPageForm > button:hover {
+  background-color: rgb(234, 89, 36);
+}
+
+.load {
+  width: 26px;
+  height: 26px;
+  border-bottom: 3px solid white;
+  border-radius: 100%;
+  animation: loadRotate 800ms linear infinite;
+  margin: auto;
+}
+@keyframes loadRotate {
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .paymentPageHeading {
+    width: 50%;
+  }
+  .paymentPageForm {
+    width: 95%;
+  }
+}

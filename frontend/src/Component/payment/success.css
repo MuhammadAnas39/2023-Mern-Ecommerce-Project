@@ -1,0 +1,84 @@
+.successPage {
+  width: 100%;
+  height: 100vh;
+  background: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(62, 62, 62);
+}
+
+.successBox {
+  background: white;
+  padding: 50px;
+  width: 65%;
+  margin: auto;
+  box-shadow: 5px 0 5px -5px rgba(0, 0, 0, 0.5),
+    0 5px 5px -5px rgba(0, 0, 0, 0.5), -5px 0 5px -5px rgba(0, 0, 0, 0.5),
+    0 -5px 5px -5px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+.successBox > div {
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+.successBox > div > a {
+  width: 100%;
+}
+
+.successBox > svg {
+  margin: auto;
+}
+
+.successBox > h3 {
+  margin-bottom: 20px;
+}
+
+.successBox > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  margin: auto;
+}
+
+.successViewOrder {
+  background-color: #ffffff;
+  border: 2px solid #f0f0f0;
+  padding: 5px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.successViewOrder:hover {
+  background-color: #fdfdfd;
+}
+.successCShopping {
+  background-color: coral;
+  border: 2px solid #f0f0f0;
+  padding: 5px 20px;
+  color: white;
+  margin-left: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.successCShopping:hover {
+  background-color: rgb(255, 93, 34);
+}
+
+@media (max-width: 700px) {
+  .successBox {
+    width: 95%;
+    padding: 30px;
+  }
+  .successBox > div {
+    flex-direction: column;
+    width: 100%;
+  }
+  .successBox > div > a {
+    width: 100%;
+    margin: 5px;
+  }
+}

@@ -1,0 +1,83 @@
+.shippingContainer {
+  width: 40%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.shippingContainer > h3 {
+  color: rgb(131, 131, 131);
+  border-bottom: 2px solid rgb(230, 230, 230);
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  padding: 8px 0;
+}
+
+.shippingInputBox {
+  display: flex;
+  align-items: center;
+  border: 2px solid gray;
+  width: 100%;
+  padding: 0 5px;
+  margin: 5px 0;
+  position: relative;
+}
+.shippingInputBox > input {
+  outline: none;
+  border: none;
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+}
+
+.shippingSelectBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  margin: 5px 0;
+  position: relative;
+  gap: 5px;
+}
+.shippingSelectBox > select {
+  outline: none;
+  border: 2px solid gray;
+  padding: 0 5px;
+
+  color: gray;
+}
+.shippingSelectBox select:first-child {
+  width: 60%;
+  padding: 8px;
+  margin: 5px 0;
+}
+.shippingSelectBox select:last-child {
+  width: 40%;
+  padding: 8px;
+  margin: 5px 0;
+}
+
+.shippingContainer > button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background: coral;
+  outline: none;
+  border: none;
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.shippingContainer > button:hover {
+  background-color: rgb(234, 93, 42);
+}
+
+@media (max-width: 768px) {
+  .shippingContainer {
+    width: 95%;
+  }
+}

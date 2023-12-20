@@ -1,0 +1,49 @@
+.contactUsPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+.contactUsPage > a {
+  width: 40%;
+  margin: 10px auto;
+  background: #ffffff;
+  display: flex;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s;
+}
+.contactUsPage > a:hover {
+  background: #cbcbcb;
+}
+.contactUsPage > a > p {
+  text-align: center;
+  width: 100%;
+  font-size: 20px;
+  color: rgb(73, 73, 73);
+  padding: 10px 0;
+}
+.contactUsPage > a > div {
+  color: white;
+  background: #434343;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px 0 0 5px;
+}
+/* .contactUsPage > a > svg {
+  background-color: #464747;
+  height: 100%;
+  width: 37px;
+  padding: 0px 5px;
+  
+} */
+
+@media (max-width: 769px) {
+  .contactUsPage > a {
+    width: 98%;
+  }
+}

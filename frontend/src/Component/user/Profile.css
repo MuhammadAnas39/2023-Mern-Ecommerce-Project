@@ -1,0 +1,79 @@
+.accountBox {
+  display: flex;
+  justify-content: space-between;
+  max-width: 70%;
+  margin: 80px auto;
+  align-items: center;
+  height: 80vh;
+  color: rgb(130, 129, 129);
+}
+.profileFirst {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.profileFirst > img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
+.profileSecond {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 45%;
+}
+.profileSecond h4 {
+  color: rgb(91, 91, 91);
+}
+.profileFirst > button {
+  background-color: coral;
+  color: white;
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.profileFirst > button:hover {
+  background-color: rgb(249, 91, 34);
+}
+
+.accountBtn {
+  background-color: rgb(50, 50, 50);
+  display: block;
+  width: 100%;
+  padding: 5px 20px;
+  color: white;
+  transition: 0.3s;
+  border: none;
+  outline: none;
+  margin: 8px 0;
+  cursor: pointer;
+}
+.accountBtn:hover {
+  background-color: rgb(20, 20, 20);
+}
+
+@media only screen and (max-width: 767px) {
+  .accountBox {
+    flex-direction: column;
+    max-width: 95%;
+    padding: 0 15px;
+    height: 90vh;
+    margin: 93px auto;
+  }
+  .profileFirst {
+    width: 100%;
+  }
+  .profileFirst img {
+    margin: auto;
+  }
+  .profileSecond {
+    width: 100%;
+    margin-top: 20px;
+  }
+}

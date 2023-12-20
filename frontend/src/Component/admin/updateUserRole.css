@@ -1,0 +1,47 @@
+.updateUserContainer {
+  background: #ffffff;
+  border-left: 1px solid #e6e6e6;
+  padding: 3rem 0;
+  min-width: 100%;
+}
+
+.updateUserContainer > h2 {
+  text-align: center;
+  margin: 10px auto;
+  width: fit-content;
+  color: rgb(107, 107, 107);
+}
+
+.updateUserRoleSelect {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border: none;
+  outline: none;
+}
+.updateUserBtn {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(105, 105, 105);
+  color: white;
+  transition: all 0.5s;
+  border: none;
+  outline: none;
+  margin-top: 25px;
+  cursor: pointer;
+}
+.updateUserBtn:hover {
+  background-color: rgb(76, 76, 76);
+}
+.updateUserBtn[disabled] {
+  cursor: not-allowed;
+  background-color: #c1c1c1;
+  color: rgb(81, 81, 81);
+}
+.updateUserBtn[disabled]:hover {
+  background-color: #c1c1c1;
+}
+
+.updateUserRoleDisableInputs {
+  color: rgb(157, 157, 157);
+}

@@ -1,0 +1,50 @@
+.updateOrder {
+  background: #fff;
+  border-left: 1px solid #e6e6e6;
+  padding: 3rem 0;
+  min-width: 100%;
+}
+
+.updateOrder > h2 {
+  text-align: center;
+  margin: 10px auto;
+  width: fit-content;
+  color: rgb(107, 107, 107);
+}
+.updateOrderShipping {
+  margin: 20px 0;
+  border-bottom: 2px solid rgb(235, 235, 235);
+  width: fit-content;
+  padding: 5px 0;
+}
+
+.updateOrderPage {
+  width: 95%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.updateOrderSelectBox {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  color: #535353;
+  border: 2px solid #e5e5e5;
+  outline: none;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+.updateOrderBtn[disabled] {
+  cursor: not-allowed;
+  background-color: #ff7f5070;
+}
+.updateOrderBtn[disabled]:hover {
+  background-color: #ff7f5070;
+}
+
+@media (max-width: 768px) {
+  .updateOrderPage {
+    grid-template-columns: 1fr;
+  }
+}
